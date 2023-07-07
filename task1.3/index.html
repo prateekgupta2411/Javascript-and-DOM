@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Students</title>
+    <style>
+    table {
+        border-collapse: collapse;
+    }
+
+    th, td {
+        border: 1px solid black;
+        padding: 8px;
+    }
+
+    .highlight-marks {
+        background-color: yellow;
+    }
+
+    .highlight-students {
+        background-color: cyan;
+    }
+    </style>
+</head>
+<br>
+    <h1>Students</h1>
+    <table>
+    <thead>
+        <tr>
+        <th style="color: white; background-color: black;">Name</th>
+        <th style="color: white; background-color: black;">Maths</th>
+        <th style="color: white; background-color: black;">Computers</th>
+        <th style="color: white; background-color: black;"></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Bob</td>
+            <td>82</td>
+            <td>88</td>
+            <td><button style="color: white; background-color: red;">Remove</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Jack</td>
+            <td>44</td>
+            <td>55</td>
+            <td><button style="color: white; background-color: red;" >Remove</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Mary</td>
+            <td>91</td>
+            <td>73</td>
+            <td><button style="color: white; background-color: red;">Remove</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Dave</td>
+            <td>60</td>
+            <td>89</td>
+            <td><button style="color: white; background-color: red;" >Remove</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Julia</td>
+            <td>58</td>
+            <td>60</td>
+            <td><button style="color: white; background-color: red;" >Remove</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Steve</td>
+            <td>42</td>
+            <td>47</td>
+            <td><button style="color: white; background-color: red;">Remove</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<button onclick="showStudents()">Show Students</button>
+<button onclick="highlightMarks()">Highlight Marks</button>
+<button onclick="highlightStudents()">Highlight Students</button>
+<button onclick="clearStyles()">Clear</button>
+</body>
+</html>
