@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>List of Products</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        .add-to-cart {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .remove-from-cart {
+            background-color: #f44336;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .cart-total {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>List of Products</h2>
+    <table>
+        <thead>
+            <tr>
+                <th style="color: white; background-color: blue;">Product</th>
+                <th style="color: white; background-color: blue;">Price</th>
+                <th style="color: white; background-color: blue;">Stock</th>
+                <th style="color: white; background-color: blue;"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Pepsi</td>
+                <td>15</td>
+                <td>20</td>
+                <td><button class="add-to-cart">Add To Cart</button></td>
+            </tr>
+            <tr>
+                <td>Coke</td>
+                <td>18</td>
+                <td>30</td>
+                <td><button class="add-to-cart">Add To Cart</button></td>
+            </tr>
+            <tr>
+                <td>Maggi</td>
+                <td>10</td>
+                <td>35</td>
+                <td><button class="add-to-cart">Add To Cart</button></td>
+            </tr>
+            <tr>
+                <td>Nescafe</td>
+                <td>40</td>
+                <td>10</td>
+                <td><button class="add-to-cart">Add To Cart</button></td>
+            </tr>
+            <tr>
+                <td>Dairy Milk</td>
+                <td>30</td>
+                <td>12</td>
+                <td><button class="add-to-cart">Add To Cart</button></td>
+            </tr>
+            <tr>
+                <td>Frito Lays</td>
+                <td>20</td>
+                <td>15</td>
+                <td><button class="add-to-cart">Add To Cart</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>My Cart</h2>
+    <h3>Number of items: 8 Bill Amount: 132</h3>
+    <table>
+        <thead>
+            <tr>
+                <th style="color: white; background-color: blue;">Product</th>
+                <th style="color: white; background-color: blue;">Quantity</th>
+                <th style="color: white; background-color: blue;">Price</th>
+                <th style="color: white; background-color: blue;">Amount</th>
+                <th style="color: white; background-color: blue;"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Pepsi</td>
+                <td>4</td>
+                <td>15</td>
+                <td>60</td>
+                <td><button class="remove-from-cart">Remove From Cart</button></td>
+            </tr>
+            <tr>
+                <td>Coke</td>
+                <td>4</td>
+                <td>18</td>
+                <td>72</td>
+                <td><button class="remove-from-cart">Remove From Cart</button></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
